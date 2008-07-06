@@ -7,7 +7,7 @@ Version:    %{version}
 Release:    %{release}
 License:    GPL or Artistic
 Group:      Development/Perl
-Summary:    Pure Perl MySQL network protocol interface.
+Summary:    Pure Perl MySQL network protocol interface
 Url:        http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildRequires: perl(IO::Socket)
