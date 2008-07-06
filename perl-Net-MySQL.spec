@@ -11,6 +11,7 @@ Summary:    Pure Perl MySQL network protocol interface
 Url:        http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildRequires: perl(IO::Socket)
+BuildRequires: perl(Digest::SHA1)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
