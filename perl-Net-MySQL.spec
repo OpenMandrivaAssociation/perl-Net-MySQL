@@ -1,19 +1,20 @@
-%define module   Net-MySQL
-%define version    0.09
-%define release    %mkrel 1
+%define upstream_name    Net-MySQL
+%define upstream_version 0.09
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Pure Perl MySQL network protocol interface
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(IO::Socket)
 BuildRequires: perl(Digest::SHA1)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Net::MySQL is a Pure Perl client interface for the MySQL database. This
@@ -26,7 +27,7 @@ Since this module's final goal is to completely replace DBD::mysql, API is
 made similar to that of DBI.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -47,4 +48,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/Net
-
