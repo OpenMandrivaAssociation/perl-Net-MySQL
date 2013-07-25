@@ -1,15 +1,15 @@
 %define upstream_name    Net-MySQL
-%define upstream_version 0.09
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.11
+Release:	1
 
 Summary:	Pure Perl MySQL network protocol interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-MySQL-0.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::Socket)
@@ -56,5 +56,6 @@ make test
 
 * Sun Jul 06 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2009.0
 - initial mdv release, generated with cpan2dist
+
 
 
