@@ -1,2 +1,4 @@
+removed_sources:
+  Net-MySQL-0.09.tar.gz: e8af608237888aab4e0c283c7a4096fabbac74b2
 sources:
-  "Net-MySQL-0.09.tar.gz": e8af608237888aab4e0c283c7a4096fabbac74b2
+  Net-MySQL-0.11.tar.gz: 399e600c29bbded2a8e385f74e864551301af911
