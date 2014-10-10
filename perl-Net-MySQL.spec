@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.11
-Release:	1
+Release:	2
 
 Summary:	Pure Perl MySQL network protocol interface
 License:	GPL+ or Artistic
